@@ -125,7 +125,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
         },
         {
           id: "rendicion-cuentas",
-          title: "Componente rendición de cuentas. ",
+          title: "Componente rendición de cuentas",
           link: "https://drive.google.com/file/d/1ULwu-79uG8MZmwh9QRlXJEMG293LXw2I/view?usp=drive_link",
         },
       ],
