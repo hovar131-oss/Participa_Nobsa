@@ -11,7 +11,7 @@ interface Subsection {
 interface AccordionItemProps {
   id: string;
   title: string;
-  content: string;
+  content?: string;
   subsections?: Subsection[];
   isOpen: boolean;
   onToggle: () => void;
@@ -48,7 +48,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       {/* Contenido */}
       {isOpen && (
         <div className="p-6 border-t border-gray-100">
-          <p className="text-gray-700 leading-relaxed mb-6">{content}</p>
+          {content && (
+            <p className="text-gray-700 leading-relaxed mb-6 whitespace-pre-line justify-center text-justify">
+              {content}
+            </p>
+          )}
 
           {subsections && (
             <div className="space-y-4">
@@ -60,7 +64,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                     href={subsection.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-gray-50 rounded-lg p-4 border border-gray-200 hover:bg-gray-100 hover:underline text-black font-semibold text-sm md:text-base transition"
+                    className="text-justify block bg-gray-50 rounded-lg p-4 border border-gray-200 hover:bg-gray-100 hover:underline text-black font-semibold text-sm md:text-base transition"
                   >
                     {subsection.title}
                   </a>
@@ -76,10 +80,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                           openSub === subsection.id ? null : subsection.id
                         )
                       }
-                      className={`w-full flex justify-between items-center p-4 text-left font-semibold text-sm md:text-base transition
+                      className={`w-full flex justify-between text-justify items-center p-4 text-left font-semibold text-sm md:text-base transition
                         ${
                           openSub === subsection.id
-                            ? "bg-gray-200 text-gray-900" // 🔹 Header gris cuando está abierto
+                            ? "bg-gray-200 text-gray-900"
                             : "bg-gray-50 text-black hover:bg-gray-100"
                         }`}
                     >
@@ -91,7 +95,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                       )}
                     </button>
                     {openSub === subsection.id && subsection.content && (
-                      <div className="px-4 pb-4 text-gray-700 text-sm md:text-base leading-relaxed bg-white">
+                      <div className="px-4 pb-4 text-gray-700 text-sm md:text-base leading-relaxed bg-white whitespace-pre-line">
                         {subsection.content}
                       </div>
                     )}
