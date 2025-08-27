@@ -123,6 +123,11 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
           title: "Plan Anticorrupción y Atención al Ciudadano (PAAC) 2023",
           link: "https://drive.google.com/file/d/15OK7vgi2gwkEPerjgH2YuCE_aUCD0i5i/view",
         },
+        {
+          id: "rendicion-cuentas",
+          title: "Componente rendición de cuentas. ",
+          link: "https://drive.google.com/file/d/1ULwu-79uG8MZmwh9QRlXJEMG293LXw2I/view?usp=drive_link",
+        },
       ],
     },
 
