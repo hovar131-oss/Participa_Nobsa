@@ -80,7 +80,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                           openSub === subsection.id ? null : subsection.id
                         )
                       }
-                      className={`w-full flex justify-between text-justify items-center p-4 text-left font-semibold text-sm md:text-base transition
+                      className={`w-full flex justify-between text-justify items-center p-4 font-semibold text-sm md:text-base transition
                         ${
                           openSub === subsection.id
                             ? "bg-gray-200 text-gray-900"

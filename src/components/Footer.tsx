@@ -1,7 +1,6 @@
 import React from "react";
 import {
   MapPin,
-  Phone,
   Mail,
   Clock,
   Facebook,
