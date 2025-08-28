@@ -7,13 +7,13 @@ const ParticipationSection: React.FC = () => {
   const participationMechanisms = [
     {
       id: "que-es",
-      title: "¿QUÉ ES?",
+      title: "A. ¿QUÉ ES?",
       content:
         "Aquí encontrará información sobre los espacios, mecanismos y acciones que la Alcaldía de Nobsa, Boyacá; implementa en cumplimiento de la política de participación ciudadana en la gestión pública, con el propósito de fortalecer la vinculación de la ciudadanía, grupos de interés y de valor, en las decisiones y acciones públicas, durante las fases del ciclo de la gestión pública (diagnóstico, formulación, implementación, evaluación y seguimiento), a partir de lo establecido en la Ley 1757 de 2015, la Ley 1712 de 2014, la Ley 489 de 1998, el Decreto 1499 de 2017, la Resolución 1519 de 2020 del Ministerio de Tecnologías de la Información y las Comunicaciones, así como los lineamientos y orientaciones del Departamento Administrativo de la Función Pública.",
     },
     {
       id: "mecanismos-participacion",
-      title: "¿MECANISMOS DE PARTICIPACIÓN CIUDADANA?",
+      title: "B. ¿MECANISMOS DE PARTICIPACIÓN CIUDADANA?",
       content:
         "Los mecanismos de participación ciudadana son herramientas legales y constitucionales que permiten a los ciudadanos ejercer su derecho a participar en la vida pública del municipio.",
       subsections: [
@@ -93,20 +93,20 @@ const ParticipationSection: React.FC = () => {
     },
     {
       id: "estrategias-participacion",
-      title: "ESTRATEGIAS DE PARTICIPACIÓN CIUDADANA",
+      title: "C. ESTRATEGIAS DE PARTICIPACIÓN CIUDADANA",
       content:
         "La Estrategia de Participación Ciudadana de la Alcaldía de Nobsa es una herramienta de gestión pública diseñada para promover la intervención activa, informada y corresponsable de la ciudadanía en los asuntos públicos del municipio.\n\nSu objetivo principal es fortalecer los lazos entre la administración municipal y la comunidad, garantizando canales efectivos, transparentes e incluyentes de diálogo, consulta, concertación, toma de decisiones y control social.",
     },
     {
       id: "estrategia-rendicion",
-      title: "ESTRATEGIA ANUAL DE RENDICIÓN DE CUENTAS",
+      title: "D. ESTRATEGIA ANUAL DE RENDICIÓN DE CUENTAS",
       content:
         "De acuerdo con el artículo 48 de la Ley 1757 de 2015, la rendición de cuentas es un proceso mediante el cual las entidades públicas informan, explican y dan a conocer los resultados de su gestión a la ciudadanía y organismos de control.\n\nLa estrategia de la Alcaldía de Nobsa se fundamenta en transparencia, buen gobierno y diálogo social, siguiendo lo establecido en el Conpes 3654 de 2010 y la versión 2 de 2015 de las Estrategias para el Plan Anticorrupción y de Atención al Ciudadano.",
     },
     {
       id: "PAAC",
       title:
-        "PLAN ANTICORRUPCIÓN Y ATENCIÓN AL CIUDADANO (PAAC) - Programa de Ética Pública",
+        "E. PLAN ANTICORRUPCIÓN Y ATENCIÓN AL CIUDADANO (PAAC) - Programa de Ética Pública",
       content: `Comprometidos con la Transparencia, la Integridad y el Buen Gobierno
 
 En el marco del fortalecimiento institucional y el compromiso con una gestión pública ética, transparente y participativa, la Alcaldía de Nobsa presenta la evolución del Plan Anticorrupción y de Atención al Ciudadano (PAAC) al nuevo Programa de Ética.
@@ -133,7 +133,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
 
     {
       id: "informes-rendicion-cuentas-generales",
-      title: "INFORMES DE RENDICIÓN DE CUENTAS GENERALES",
+      title: "F. INFORMES DE RENDICIÓN DE CUENTAS GENERALES",
 
       subsections: [
         {
@@ -145,7 +145,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
     },
     {
       id: "convocatorias-para-la-participacion-de-la-ciudadania",
-      title: "CONVOCATORIAS PARA LA PARTICIPACIÓN DE LA CIUDADANÍA",
+      title: "G. CONVOCATORIAS PARA LA PARTICIPACIÓN DE LA CIUDADANÍA",
 
       subsections: [
         {
@@ -158,7 +158,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
 
     {
       id: "calendario-estrategia-participacion-ciudadana",
-      title: "CALENDARIO DE LA ESTRATEGIA ANUAL DE PARTICIPACIÓN CIUDADANA.",
+      title: "H. CALENDARIO DE LA ESTRATEGIA ANUAL DE PARTICIPACIÓN CIUDADANA.",
 
       subsections: [
         {
@@ -172,7 +172,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
     {
       id: "formulario-participacion-ciudadana",
       title:
-        "FORMULARIO DE INSCRIPCIÓN CIUDADANA A PROCESOS DE PARTICIPACIÓN, INSTANCIAS O ACCIONES QUE OFRECE LA ENTIDAD",
+        "I. FORMULARIO DE INSCRIPCIÓN CIUDADANA A PROCESOS DE PARTICIPACIÓN, INSTANCIAS O ACCIONES QUE OFRECE LA ENTIDAD",
 
       subsections: [
         {
@@ -186,7 +186,7 @@ Este programa nace como una estrategia integral que no solo da continuidad a las
     {
       id: "canal-participacion-ciudadana",
       title:
-        "CANAL DE INTERACCIÓN DELIBERATORIA PARA LA PARTICIPACIÓN CIUDADANA",
+        "J. CANAL DE INTERACCIÓN DELIBERATORIA PARA LA PARTICIPACIÓN CIUDADANA",
 
       subsections: [
         {
