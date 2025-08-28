@@ -1,9 +1,76 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, FileText, Eye, Download } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 
 const AccountabilityPage: React.FC = () => {
   const navigate = useNavigate();
+
+  const sections = [
+    {
+      id: "A",
+      title: "Habilitar un espacio para que la ciudadanía postule temáticas",
+      link: "https://www.nobsa-boyaca.gov.co/rendicion-de-cuentas/participa-de-nuestra-rendicion-de-cuentas-2024",
+    },
+    {
+      id: "B",
+      title: "Estrategia de comunicación para la rendición de cuentas",
+      link: "https://www.nobsa-boyaca.gov.co/rendicion-de-cuentas/participa-de-nuestra-rendicion-de-cuentas-2024",
+    },
+    {
+      id: "C",
+      title: "Calendario eventos de diálogo",
+      link: null, // Falta
+    },
+    {
+      id: "D",
+      title:
+        "Articular a los informes de rendición de cuentas en el menú Transparencia",
+      link: "https://www.nobsa-boyaca.gov.co/control/informe-de-rendicion-de-cuentas-periodo-evaluado-2024",
+    },
+    {
+      id: "E",
+      title:
+        "Habilitar un canal para eventos de diálogo articulación con Sistema Nacional",
+      sublinks: [
+        {
+          label: "Audiencia Pública de Rendición de Cuentas",
+          url: "https://www.nobsa-boyaca.gov.co/control/informe-de-rendicion-de-cuentas-periodo-evaluado-2024",
+        },
+        {
+          label: "Encuesta Rendición de Cuentas",
+          url: "https://www.nobsa-boyaca.gov.co/rendicion-de-cuentas/participa-de-nuestra-rendicion-de-cuentas-2024",
+        },
+      ],
+    },
+    {
+      id: "F",
+      title: "Preguntas y respuestas de eventos de diálogo",
+      link: null, // Falta
+    },
+    {
+      id: "G",
+      title: "Memorias de cada evento",
+      link: "https://www.nobsa-boyaca.gov.co/control/informe-de-rendicion-de-cuentas-periodo-evaluado-2024",
+    },
+    {
+      id: "H",
+      title: "Acciones de mejora incorporadas",
+      sublinks: [
+        {
+          label: "Evaluación Estrategia Rendición de Cuentas informe 2024",
+          url: null, // Falta
+        },
+        {
+          label: "Plan de Rendición de Cuentas 2024",
+          url: null, // Falta
+        },
+        {
+          label: "Informe de Audiencia Pública de Rendición de Cuentas 2024",
+          url: "https://www.nobsa-boyaca.gov.co/control/informe-de-rendicion-de-cuentas-periodo-evaluado-2024",
+        },
+      ],
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -21,116 +88,70 @@ const AccountabilityPage: React.FC = () => {
             Rendición de Cuentas
           </h1>
           <p className="text-lg text-gray-600 mt-2">
-            Transparencia en la gestión pública municipal
+            Proceso mediante el cual nuestra entidad informa, explica y da a
+            conocer los resultados de la gestión realizada con base en las metas
+            establecidas en el Plan de Desarrollo, en compromiso con los
+            ciudadanos de Nobsa, la sociedad civil y los organismos de control,
+            promoviendo un diálogo de doble vía.
           </p>
         </div>
       </div>
 
-      {/* Content */}
+      {/* Sections */}
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          {/* Introduction */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <div className="flex items-center mb-6">
-              <FileText className="h-8 w-8 text-red-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">
-                Transparencia y Rendición de Cuentas
-              </h2>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-6">
-              La rendición de cuentas es un proceso mediante el cual informamos,
-              explicamos y damos a conocer los resultados de nuestra gestión a
-              la ciudadanía. Es un ejercicio de transparencia que fortalece la
-              confianza entre la administración y la comunidad.
-            </p>
-          </div>
-
-          {/* Accountability Sections */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <Eye className="h-8 w-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Informes de Gestión
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Accede a los informes detallados sobre el cumplimiento de metas,
-                ejecución presupuestal y avances en proyectos municipales.
-              </p>
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200">
-                Ver informes →
-              </button>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <Download className="h-8 w-8 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Documentos Públicos
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Descarga contratos, resoluciones, decretos y otros documentos
-                oficiales de la administración municipal.
-              </p>
-              <button className="text-green-600 font-semibold hover:text-green-700 transition-colors duration-200">
-                Descargar documentos →
-              </button>
-            </div>
-          </div>
-
-          {/* Recent Reports */}
-          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Informes Recientes
-            </h3>
-            <div className="space-y-4">
-              <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Informe de Gestión 2024
-                    </h4>
-                    <p className="text-gray-600 text-sm">
-                      Resultados y logros de la administración durante el año
-                      2024
-                    </p>
-                  </div>
-                  <button className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors duration-200">
-                    Descargar
-                  </button>
-                </div>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Ejecución Presupuestal Q4 2024
-                    </h4>
-                    <p className="text-gray-600 text-sm">
-                      Detalle de la ejecución presupuestal del último trimestre
-                    </p>
-                  </div>
-                  <button className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors duration-200">
-                    Descargar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Call to Action */}
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">Mantente informado</h3>
-            <p className="text-red-100 mb-6 max-w-2xl mx-auto">
-              La transparencia es fundamental para una buena gestión pública.
-              Accede regularmente a nuestros informes y documentos oficiales.
-            </p>
-            <button
-              onClick={() => navigate("/contacto")}
-              className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+        <div className="max-w-4xl mx-auto space-y-6">
+          {sections.map((section) => (
+            <div
+              key={section.id}
+              className="bg-white shadow-lg rounded-xl p-6 border border-gray-200"
             >
-              Solicitar información
-            </button>
-          </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {section.id}. {section.title}
+              </h3>
+
+              {/* Si solo hay un link */}
+              {section.link && (
+                <a
+                  href={section.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Ver más <ExternalLink className="h-4 w-4 ml-1" />
+                </a>
+              )}
+
+              {/* Si hay varios sublinks */}
+              {section.sublinks && (
+                <ul className="list-disc list-inside space-y-2">
+                  {section.sublinks.map((sublink, idx) => (
+                    <li key={idx}>
+                      {sublink.url ? (
+                        <a
+                          href={sublink.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                        >
+                          {sublink.label}
+                          <ExternalLink className="h-4 w-4 ml-1" />
+                        </a>
+                      ) : (
+                        <span className="text-gray-500">
+                          {sublink.label} (Falta)
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {/* Si está pendiente */}
+              {!section.link && !section.sublinks && (
+                <p className="text-gray-500 italic">Información pendiente</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

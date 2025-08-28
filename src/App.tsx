@@ -9,6 +9,7 @@ import AccountabilityPage from "./pages/Rendicion_Cuentas";
 import ParticipationPage from "./pages/Participacion_Ciudadana";
 import PlanningBudgetPage from "./pages/Planeacion_Presupuesto";
 import SocialControlPage from "./pages/Control_Social";
+import InnovationPage from "./pages/Innovacion";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           />
           <Route path="/rendicion-cuentas" element={<AccountabilityPage />} />
           <Route path="/control-social" element={<SocialControlPage />} />
+          <Route path="/innovacion" element={<InnovationPage />} />
         </Routes>
       </div>
     </Router>

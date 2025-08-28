@@ -1,6 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Users, PieChart, MessageSquare, FileText, Shield } from "lucide-react";
+import {
+  Users,
+  PieChart,
+  MessageSquare,
+  FileText,
+  Shield,
+  Lightbulb,
+} from "lucide-react";
 
 interface CategoryCard {
   id: string;
@@ -49,6 +56,18 @@ const ParticipationCategories: React.FC = () => {
       icon: <MessageSquare className="h-8 w-8" />,
       color: "from-purple-500 to-purple-600",
     },
+    {
+      id: "innovation",
+      title: "Colaboración e Innovación Abierta",
+      description:
+        "Fomentar la co-creación de soluciones y la participación activa de la comunidad en procesos de innovación pública.",
+      imageUrl:
+        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
+      route: "/innovacion",
+      icon: <Lightbulb className="h-8 w-8" />,
+      color: "from-purple-500 to-indigo-600",
+    },
+
     {
       id: "accountability",
       title: "Rendición de Cuentas",
@@ -159,24 +178,6 @@ const ParticipationCategories: React.FC = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Additional Info Section */}
-      <div className="mt-16 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8 text-center">
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">
-          ¿Necesitas más información?
-        </h3>
-        <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-          Si tienes dudas sobre algún proceso de participación o necesitas
-          orientación específica, no dudes en contactarnos. Estamos aquí para
-          apoyarte en tu participación ciudadana.
-        </p>
-        <button
-          onClick={() => navigate("/contacto")}
-          className="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-        >
-          Contáctanos
-        </button>
       </div>
     </div>
   );

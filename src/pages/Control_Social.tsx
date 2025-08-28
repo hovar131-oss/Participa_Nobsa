@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, Shield, Search, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Shield, FileText } from "lucide-react";
 
 const SocialControlPage: React.FC = () => {
   const navigate = useNavigate();
@@ -38,110 +38,130 @@ const SocialControlPage: React.FC = () => {
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed mb-6">
-              El control social es el derecho y deber de los ciudadanos de
-              participar de manera individual o colectiva en la vigilancia de la
-              gestión pública y sus resultados. Es una herramienta fundamental
-              para garantizar la transparencia y eficiencia en el uso de los
-              recursos públicos.
+              El control social es el derecho y el deber de los ciudadanos a
+              participar, de manera individual o a través de sus organizaciones,
+              redes sociales e instituciones, en la vigilancia de la gestión
+              pública y sus resultados, de acuerdo con la regulación aplicable y
+              la correcta utilización de los recursos y bienes públicos.
             </p>
           </div>
 
-          {/* Control Mechanisms */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <Search className="h-8 w-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Veedurías Ciudadanas
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Mecanismo democrático de representación que permite a los
-                ciudadanos ejercer vigilancia sobre la gestión pública.
-              </p>
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200">
-                Crear veeduría →
-              </button>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <AlertTriangle className="h-8 w-8 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Denuncias y Quejas
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Reporta irregularidades, mal uso de recursos públicos o
-                deficiencias en la prestación de servicios municipales.
-              </p>
-              <button className="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-200">
-                Presentar denuncia →
-              </button>
-            </div>
-          </div>
-
-          {/* Active Oversight */}
+          {/* Modalidades */}
           <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Veedurías Activas
-            </h3>
-            <div className="space-y-4">
-              <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Veeduría Obras Públicas
-                    </h4>
-                    <p className="text-gray-600 text-sm mb-2">
-                      Vigilancia sobre la ejecución de proyectos de
-                      infraestructura municipal
-                    </p>
-                    <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-                      Activa
-                    </span>
-                  </div>
-                  <button className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-700 transition-colors duration-200">
-                    Ver detalles
-                  </button>
-                </div>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Veeduría Servicios Públicos
-                    </h4>
-                    <p className="text-gray-600 text-sm mb-2">
-                      Control sobre la calidad y cobertura de servicios públicos
-                      domiciliarios
-                    </p>
-                    <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-                      Activa
-                    </span>
-                  </div>
-                  <button className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-orange-700 transition-colors duration-200">
-                    Ver detalles
-                  </button>
-                </div>
-              </div>
+            <div className="flex items-center mb-6">
+              <FileText className="h-8 w-8 text-red-600 mr-3" />
+              <h2 className="text-2xl font-bold text-gray-900">
+                Mecanismos del Control Social
+              </h2>
             </div>
+            <ul className="space-y-3 text-gray-700">
+              <li>
+                <strong>A.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/tema/directorio-institucional/entes-de-control"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Informar las modalidades de control social
+                </a>
+              </li>
+              <li>
+                <strong>B.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/tema/convocatorias"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Convocar cuando inicie ejecución de programas, proyectos o
+                  contratos
+                </a>
+              </li>
+              <li>
+                <strong>C.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/planes/plan-de-desarrollo-nobsa-a-otro-nivel-2024--2027"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Resumen del tema objeto de vigilancia
+                </a>
+              </li>
+              <li>
+                <strong>D.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/tema/control/informes-de-gestion-evaluacion-y-auditoria"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Informes del interventor o supervisor
+                </a>
+              </li>
+              <li>
+                <strong>E.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/planes/plan-de-desarrollo-nobsa-a-otro-nivel-2024--2027"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Facilitar herramientas de evaluación
+                </a>
+              </li>
+              <li>
+                <strong>F.</strong>{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.nobsa-boyaca.gov.co/planes/plan-de-desarrollo-nobsa-a-otro-nivel-2024--2027"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Publicar registro de observaciones de veedurías
+                </a>
+              </li>
+              <li>
+                <strong>G.</strong> Acciones de mejora
+              </li>
+            </ul>
           </div>
 
-          {/* Call to Action */}
-          <div className="bg-gradient-to-r from-orange-600 to-orange-700 rounded-xl p-8 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Ejerce tu derecho al control social
+          {/* Pasos para veedurías */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Pasos para crear Veedurías Ciudadanas
             </h3>
-            <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
-              Tu participación en el control social es fundamental para
-              garantizar una gestión pública transparente, eficiente y al
-              servicio de la comunidad.
+            <p className="text-gray-700 mb-4">
+              Consulta la guía oficial para conocer los pasos y requisitos para
+              conformar una veeduría ciudadana:
             </p>
-            <button
-              onClick={() => navigate("/contacto")}
-              className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
-            >
-              Iniciar control social
-            </button>
+            <ul className="list-disc pl-6 space-y-2 text-blue-600">
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.funcionpublica.gov.co/veedurias/Paginas/preguntas"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Preguntas frecuentes sobre veedurías
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.funcionpublica.gov.co/veedurias/Content/Doc/PASOS3.pdf"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Documento: Pasos para la creación de veedurías (PDF)
+                </a>
+              </li>
+            </ul>
           </div>
+
+          {/* Aquí seguirían tus secciones de mecanismos activos y CTA */}
         </div>
       </div>
     </div>
